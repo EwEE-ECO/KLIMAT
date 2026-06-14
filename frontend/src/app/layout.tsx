@@ -10,6 +10,7 @@ const roboto = Roboto({ subsets: ["cyrillic", "latin"], display: "swap", weight:
 
 export const metadata: Metadata = {
   title: { default: "КвадроКлимат — продажа и монтаж кондиционеров в Краснодаре", template: "%s | КвадроКлимат" },
+  icons: { icon: "/favicon.svg" },
   description: "Продажа, монтаж и обслуживание кондиционеров в Краснодаре. Более 40 брендов: DENKO, Daikin, Mitsubishi, Bosch, LG и др. Официальная гарантия, бесплатный замер.",
   keywords: ["кондиционеры Краснодар", "сплит-системы", "монтаж кондиционеров", "климатическая техника", "DENKO", "Daikin", "Mitsubishi"],
   openGraph: {

@@ -86,7 +86,7 @@ export function Header() {
               <Phone className="w-4 h-4" /> +7 (918) 163-83-77
             </a>
 
-            <button onClick={() => setSearchOpen(!searchOpen)} className="p-2 text-gray-500 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors">
+            <button onClick={() => setSearchOpen(!searchOpen)} aria-label="Поиск" className="p-2 text-gray-500 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors">
               <Search className="w-5 h-5" />
             </button>
 
@@ -95,7 +95,7 @@ export function Header() {
               <span className="absolute -top-0.5 -right-0.5 w-4 h-4 bg-brand-500 text-white text-[10px] font-bold rounded-full flex items-center justify-center">0</span>
             </Link>
 
-            <button onClick={() => setMenuOpen(!menuOpen)} className="lg:hidden p-2 text-gray-500 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors">
+            <button onClick={() => setMenuOpen(!menuOpen)} aria-label={menuOpen ? "Закрыть меню" : "Открыть меню"} className="lg:hidden p-2 text-gray-500 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors">
               {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
             </button>
           </div>
@@ -153,7 +153,7 @@ export function Header() {
           >
             <div className="flex items-center justify-between p-4 border-b border-gray-100">
               <span className="font-bold text-gray-900">Меню</span>
-              <button onClick={() => setMenuOpen(false)} className="p-2 text-gray-500 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors">
+              <button onClick={() => setMenuOpen(false)} aria-label="Закрыть меню" className="p-2 text-gray-500 hover:text-brand-500 rounded-lg hover:bg-brand-50 transition-colors">
                 <X className="w-5 h-5" />
               </button>
             </div>

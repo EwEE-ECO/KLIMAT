@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from "react"
+import Link from "next/link"
 import { SlidersHorizontal, X } from "lucide-react"
 import { ProductCard } from "@/components/ui/ProductCard"
 import { Button } from "@/components/ui/Button"
@@ -40,7 +41,7 @@ export function CatalogContent() {
   return (
     <div className="container-main py-8 md:py-12">
       <div className="flex items-center gap-2 text-sm text-gray-400 mb-6">
-        <a href="/" className="hover:text-brand-500">Главная</a>
+        <Link href="/" className="hover:text-brand-500">Главная</Link>
         <span>/</span>
         <span className="text-gray-600">Каталог</span>
       </div>
