@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
 import Link from "next/link"
 import { ShoppingCart, Star, Check, ChevronDown, Shield, Truck, Clock, Wrench } from "lucide-react"
 import { Button } from "@/components/ui/Button"
@@ -32,8 +31,7 @@ export function ProductDetail({ product }: ProductDetailProps) {
 
       <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
         <div>
-          <div className="relative aspect-[4/3] bg-gray-50 rounded-2xl overflow-hidden">
-            <Image src={product.images?.[0] || "https://kvadroklimat.ru/upload/iblock/597/pgx2pivkopk9knyb3zzeqbblpepxgekf.jpg"} alt={product.name} fill className="object-cover" sizes="50vw" priority />
+          <div className="relative aspect-[4/3] bg-gradient-to-br from-brand-100 to-brand-200 rounded-2xl overflow-hidden">
             <div className="absolute top-4 left-4 flex gap-2">
               {product.isHit && <span className="px-3 py-1 text-xs font-bold text-white bg-red-500 rounded-lg">ХИТ</span>}
               {product.oldPrice && (

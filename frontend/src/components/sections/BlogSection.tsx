@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { ArrowRight, Calendar } from "lucide-react"
 import { SectionTitle } from "@/components/ui/SectionTitle"
 
@@ -39,8 +38,7 @@ export function BlogSection() {
           {posts.map((post) => (
             <Link key={post.slug} href={post.slug} className="group bg-white rounded-2xl overflow-hidden border border-gray-100 hover:shadow-xl transition-all duration-300">
               <div className="relative aspect-[16/9] overflow-hidden">
-                <Image src={post.image} alt={post.title} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="33vw" />
-                <span className="absolute top-3 left-3 px-3 py-1 text-xs font-semibold text-white bg-accent-400 rounded-full">{post.category}</span>
+                <span className="absolute top-3 left-3 px-3 py-1 text-xs font-semibold text-white bg-accent-400 rounded-full z-10">{post.category}</span>
               </div>
               <div className="p-5">
                 <div className="flex items-center gap-2 text-xs text-gray-400 mb-2">

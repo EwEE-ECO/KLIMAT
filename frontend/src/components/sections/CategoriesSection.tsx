@@ -1,5 +1,4 @@
 import Link from "next/link"
-import Image from "next/image"
 import { ArrowRight } from "lucide-react"
 import { SectionTitle } from "@/components/ui/SectionTitle"
 
@@ -20,7 +19,7 @@ export function CategoriesSection() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {categories.map((cat) => (
             <Link key={cat.name} href={cat.slug} className="group relative overflow-hidden rounded-2xl aspect-[4/3] block">
-              <Image src={cat.image} alt={cat.name} fill className="object-cover group-hover:scale-105 transition-transform duration-500" sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw" />
+              <div className="absolute inset-0 bg-gradient-to-br from-brand-100 to-brand-200" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <p className="text-xs font-medium text-white/70">{cat.count} моделей</p>

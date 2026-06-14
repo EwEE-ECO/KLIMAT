@@ -1,7 +1,6 @@
 "use client"
 
 import Link from "next/link"
-import Image from "next/image"
 import { useState } from "react"
 import { Trash2, ShoppingBag, ArrowLeft, Wrench } from "lucide-react"
 import { Button } from "@/components/ui/Button"
@@ -53,8 +52,8 @@ export default function CartPage() {
         <div className="lg:col-span-2 space-y-4">
           {items.map((item) => (
             <div key={item.id} className="flex items-center gap-4 p-4 bg-white rounded-2xl border border-gray-100">
-              <div className="w-20 h-20 bg-gray-50 rounded-xl shrink-0 overflow-hidden">
-                {item.image ? <Image src={item.image} alt={item.name} width={80} height={80} className="object-cover" /> : <div className="w-full h-full flex items-center justify-center text-gray-300"><ShoppingBag className="w-8 h-8" /></div>}
+              <div className="w-20 h-20 bg-gray-50 rounded-xl shrink-0 overflow-hidden flex items-center justify-center text-gray-300">
+                <ShoppingBag className="w-8 h-8" />
               </div>
               <div className="flex-1 min-w-0">
                 <Link href={`/product/${item.slug}`} className="text-sm font-semibold text-gray-900 hover:text-brand-500 line-clamp-1">{item.name}</Link>
