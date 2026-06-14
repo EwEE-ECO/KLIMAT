@@ -77,6 +77,40 @@ export default function AboutPage() {
           ))}
         </div>
 
+        <div className="mb-16">
+          <h3 className="text-2xl font-bold text-gray-900 text-center mb-3">Сертификаты и лицензии</h3>
+          <p className="text-gray-500 text-center mb-10 max-w-xl mx-auto">Официальные документы, подтверждающие качество нашей работы</p>
+          <div className="grid md:grid-cols-3 gap-6">
+            <div className="rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm group cursor-pointer">
+              <div className="aspect-[3/4] bg-gray-50 relative overflow-hidden">
+                <Image src="/certificates/cert-1.jpg" alt="Сертификат ООО ЕВРОИР" fill className="object-contain p-4 group-hover:scale-105 transition-transform duration-300" sizes="33vw" />
+              </div>
+              <div className="p-4">
+                <p className="text-sm font-semibold text-gray-900">Сертификат ООО «Евроир»</p>
+                <p className="text-xs text-gray-500 mt-1">Подтверждение партнёрства</p>
+              </div>
+            </div>
+            <div className="rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm group cursor-pointer">
+              <div className="aspect-[3/4] bg-gray-50 relative overflow-hidden">
+                <Image src="/certificates/cert-2.jpg" alt="Сертификат соответствия" fill className="object-contain p-4 group-hover:scale-105 transition-transform duration-300" sizes="33vw" />
+              </div>
+              <div className="p-4">
+                <p className="text-sm font-semibold text-gray-900">Сертификат соответствия</p>
+                <p className="text-xs text-gray-500 mt-1">Право на установку и обслуживание</p>
+              </div>
+            </div>
+            <div className="rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm group cursor-pointer">
+              <div className="aspect-[3/4] bg-gray-50 relative overflow-hidden">
+                <Image src="/certificates/cert-3.jpg" alt="Лицензия на деятельность" fill className="object-contain p-4 group-hover:scale-105 transition-transform duration-300" sizes="33vw" />
+              </div>
+              <div className="p-4">
+                <p className="text-sm font-semibold text-gray-900">Лицензия на деятельность</p>
+                <p className="text-xs text-gray-500 mt-1">Монтаж и сервисное обслуживание</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <BrandsMarquee />
 
         <div className="bg-brand-900 rounded-3xl p-8 md:p-12 text-white">
