@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import Image from "next/image"
 import { Shield, Award, Users, Building2, Target, Leaf, Heart, Phone, Mail, Clock } from "lucide-react"
 import { SectionTitle } from "@/components/ui/SectionTitle"
 import { BrandsMarquee } from "@/components/sections/BrandsMarquee"
@@ -22,9 +21,7 @@ export default function AboutPage() {
             <p>«КвадроКлимат» — молодая, но опытная команда специалистов, которая предоставляет комплекс услуг по продаже, установке и обслуживанию климатической техники.</p>
             <p>«КвадроКлимат» работает по всей территории Краснодарского края. Наши специалисты могут выехать на монтаж или для проведения сервисных работ в любой, даже самый отдаленный населенный пункт нашего края. При необходимости поможем и соседям :)</p>
           </div>
-          <div className="relative aspect-[4/3] rounded-2xl overflow-hidden bg-gray-100">
-            <Image src="https://kvadroklimat.ru/upload/iblock/44a/dx49e4o0tlju698litgpkcn56k70qomv.jpg" alt="О компании" fill className="object-cover" sizes="50vw" />
-          </div>
+
         </div>
 
         <div className="bg-brand-50 rounded-3xl p-8 md:p-12 mb-16">
