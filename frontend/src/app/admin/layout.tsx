@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import { usePathname, useRouter } from "next/navigation"
-import { useSession, signOut } from "next-auth/react"
+import { SessionProvider, useSession, signOut } from "next-auth/react"
 import { useEffect, useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X, LayoutDashboard, Package, ShoppingCart, FolderTree, FileText, Wrench, MessageSquare, LogOut, ChevronLeft, Loader2 } from "lucide-react"
@@ -25,6 +25,14 @@ const sidebarVariants = {
 } as const
 
 export default function AdminLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <SessionProvider>
+      <AdminLayoutInner>{children}</AdminLayoutInner>
+    </SessionProvider>
+  )
+}
+
+function AdminLayoutInner({ children }: { children: React.ReactNode }) {
   const pathname = usePathname()
   const router = useRouter()
   const { data: session, status } = useSession()
