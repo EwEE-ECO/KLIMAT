@@ -84,8 +84,8 @@ export default function AboutPage() {
           <p className="text-gray-500 text-center mb-10 max-w-xl mx-auto">Официальные документы, подтверждающие качество нашей работы</p>
           <div className="grid md:grid-cols-3 gap-6">
             <div className="rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm group cursor-pointer">
-              <div className="aspect-[3/4] bg-gray-50 relative overflow-hidden">
-                <img src={`${basePath}/certificates/cert-1.jpg`} alt="Сертификат ООО EUROHOFF" className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300" />
+              <div className="aspect-[4/3] bg-gray-50 relative overflow-hidden rounded-lg">
+                <img src={`${basePath}/certificates/cert-1.jpg`} alt="Сертификат ООО EUROHOFF" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="p-4">
                 <p className="text-sm font-semibold text-gray-900">Сертификат ООО «EUROHOFF»</p>
@@ -93,8 +93,8 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm group cursor-pointer">
-              <div className="aspect-[3/4] bg-gray-50 relative overflow-hidden">
-                <img src={`${basePath}/certificates/cert-2.jpg`} alt="Сертификат ООО Denko" className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300" />
+              <div className="aspect-[4/3] bg-gray-50 relative overflow-hidden rounded-lg">
+                <img src={`${basePath}/certificates/cert-2.jpg`} alt="Сертификат ООО Denko" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="p-4">
                 <p className="text-sm font-semibold text-gray-900">Сертификат ООО «Denko»</p>
@@ -102,8 +102,8 @@ export default function AboutPage() {
               </div>
             </div>
             <div className="rounded-2xl overflow-hidden bg-white border border-gray-100 shadow-sm group cursor-pointer">
-              <div className="aspect-[3/4] bg-gray-50 relative overflow-hidden">
-                <img src={`${basePath}/certificates/cert-3.jpg`} alt="Сертификат ООО Dahatsu" className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300" />
+              <div className="aspect-[4/3] bg-gray-50 relative overflow-hidden rounded-lg">
+                <img src={`${basePath}/certificates/cert-3.jpg`} alt="Сертификат ООО Dahatsu" className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300" />
               </div>
               <div className="p-4">
                 <p className="text-sm font-semibold text-gray-900">Сертификат ООО «Dahatsu»</p>
