@@ -17,9 +17,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: frontend
     steps:
       - uses: actions/checkout@v4
 
@@ -29,20 +26,22 @@ jobs:
           cache: npm
           cache-dependency-path: frontend/package-lock.json
 
-      - uses: actions/configure-pages@v5
-        with:
-          static_site_generator: next
+      - name: Install dependencies
+        run: npm ci
+        working-directory: frontend
 
       - name: Remove API routes (not supported in static export)
         run: rm -rf src/app/api
-
-      - name: Install dependencies
-        run: npm ci
+        working-directory: frontend
 
       - name: Build with GitHub Pages config
         run: npm run build
+        working-directory: frontend
         env:
           GITHUB_PAGES: "true"
+
+      - name: Add .nojekyll
+        run: touch frontend/out/.nojekyll
 
       - uses: actions/upload-pages-artifact@v3
         with:
