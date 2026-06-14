@@ -1,5 +1,6 @@
 import { HeroSection } from "@/components/sections/HeroSection"
 import { FeaturesSection } from "@/components/sections/FeaturesSection"
+import { CategoriesSection } from "@/components/sections/CategoriesSection"
 import { HitsSection } from "@/components/sections/HitsSection"
 import { WhyUsSection } from "@/components/sections/WhyUsSection"
 import { ReviewsSection } from "@/components/sections/ReviewsSection"
@@ -12,7 +13,7 @@ export default function HomePage() {
     <>
       <HeroSection />
       <SectionWrapper><FeaturesSection /></SectionWrapper>
-
+      <SectionWrapper><CategoriesSection /></SectionWrapper>
       <SectionWrapper><HitsSection /></SectionWrapper>
       <SectionWrapper><WhyUsSection /></SectionWrapper>
       <SectionWrapper><ReviewsSection /></SectionWrapper>
